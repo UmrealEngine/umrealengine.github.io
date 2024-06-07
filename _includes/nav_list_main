@@ -1,0 +1,120 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+    <input id="ac-toc" name="accordion-toc" type="checkbox" />
+    <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+    <ul class="nav__items" id="category_tag_menu">
+        <!-- <li>
+            <span style="display: inline-block;">
+                <span class="nav__sub-title" style="font-size: 16px; display: inline-block; vertical-align: middle; color:#42e5e1;"><img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> Project</span>
+            </span>
+        </li> -->
+        <li>
+            <a href="https://potettang.github.io/Metaverse Academy/">
+                <span style="display: inline-block;">
+                    <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;">
+                        <img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> 
+                        Unreal Engine <span style="color: #ffffff;">(2)</span>
+                    </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <span>
+            </span>
+        </li>    
+        <li>
+            <a href="https://potettang.github.io/Metaverse Academy/">
+                <span style="display: inline-block;">
+                    <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;">
+                        <img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> 
+                        Metaverse Academy <span style="color: #ffffff;">(2)</span>
+                    </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <span style="display: inline-block;">
+                <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;"><img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> MS
+                </span>
+            </span>
+            <ul>
+                <li><a href="/Metaverse Academy/" class="" style="font-size: 12.5px;">prior learning (01)</a></li>
+            </ul>
+        </li>
+        <li>
+<!--             <span style="display: inline-block;">
+                <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;"><img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> Medical AI
+                </span>
+            </span>
+            <ul>
+                <li><a href="/Medical AI/" class="" style="font-size: 12.5px;">Medical Data Preprocessing and Processing (00)</a></li>
+            </ul>
+        </li>
+        <li>
+            <span style="display: inline-block;">
+                <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;"><img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> Data Science</span>
+            </span>
+            <ul>
+                <li><a href="/Data Science/" class="" style="font-size: 12.5px;">Fundamentals of Data Science (00)</a></li>
+            </ul>
+        </li> 
+        <li>
+            <span style="display: inline-block;">
+                <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;"><img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> Python for Data Analysis, 3E</span>
+            </span>
+            <ul>
+                <li><a href="/Python for Data Analysis, 3E/" class="" style="font-size: 12.5px;">CHAPTER 1</a></li>
+            </ul>
+        </li>  -->
+        <!-- <li>
+            <a href="https://potettang.github.io/Microsoft AI School/">
+                <span style="display: inline-block;">
+                    <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;">
+                        <img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> 
+                        Microsoft AI School <span style="color: #ffffff;">(33)</span>
+                    </span>
+                </span>
+            </a>
+        </li>    -->
+<!--         <li>
+            <a href="https://potettang.github.io/Extracurricular Activity/">
+                <span style="display: inline-block;">
+                    <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;">
+                        <img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> 
+                        EXTRACURRICULAR ACTIVITY <span style="color: #ffffff;">(2)</span>
+                    </span>
+                </span>
+            </a>
+        </li>   -->
+        <!-- <li>
+            <a href="https://potettang.github.io/Certification/"> 
+                <span style="display: inline-block;">
+                    <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;">
+                        <img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> 
+                        Certification <span style="color: #ffffff;">(12)</span>
+                    </span>
+                </span>
+            </a>
+        </li>                -->
+<!--         <li>
+            <span style="display: inline-block;">
+                <span class="nav__sub-title" style="font-size: 13.5px; display: inline-block; vertical-align: middle; color:#42e5e1;"><img src="../images/ImgFile/pol.png" style="height: 16px; width: auto; margin-top: -4px;" alt="C/C++/C# 이미지"> ETC.</span>
+            </span>
+        </li>         -->
+    </ul>
+</nav>
+
+
+<!-- <li>
+    <span style="display: inline-block;">
+        <span class="nav__sub-title" style="font-size: 16px; display: inline-block; vertical-align: middle; color:#42e5e1;"><img src="../images/ImgFile/pol.png" style="height: 16px; width: auto;" alt="C/C++/C# 이미지"> Etc</span>
+    </span>
+    <ul>
+        <li><a href="/categories/cpp" class="">SQLD</a></li>
+    </ul>
+    <ul>
+        <li><a href="/categories/ADsp" class="">ADsP</a></li>
+    </ul>
+</li> -->
+

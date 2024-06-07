@@ -1,0 +1,84 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<ul class="taxonomy__index">
+  {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in postsInYear %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% for year in postsByYear %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      {% for post in year.items %}
+        {% include archive-single.html type=entries_layout %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}
+
+
+<style>
+  textarea {
+    background-color: #f6f8fa; /* 백그라운드 색상 추가 */
+    border: 2px solid #f6f8fa;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  textarea:focus {
+    border-color: #555;
+    outline: none;
+  }
+  .code-wrapper {
+    padding: 16px;
+    border-radius: 8px;
+  }
+</style>
+
+
+
+
+<script>
+  document.getElementById("python-code").addEventListener("keydown", function(e) {
+    if (e.key === "Tab") {
+      e.preventDefault();
+      var start = this.selectionStart;
+      var end = this.selectionEnd;
+
+      this.value = this.value.substring(0, start) + "  " + this.value.substring(end);
+      this.selectionStart = this.selectionEnd = start + 3;
+    }
+  });
+</script>
+
+
+<style>
+  textarea {
+    background-color: #272822; /* 백그라운드 색상 추가 */
+    border: 2px solid #272822;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+  .code-wrapper {
+    padding: 16px;
+    border-radius: 8px;
+  }
+</style>
+
+

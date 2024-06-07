@@ -1,0 +1,42 @@
+# main links
+# main:
+#   - title: "Project"
+#     url: /Project/
+#   - title: "Python"
+#     url: /python/
+#   - title: "R"
+#     url: /R/
+#   - title: "SQL"
+#     url: /SQL/
+#   - title: "Microsoft"
+#     url: /Microsoft/
+#   - title: "HTML, CSS, JS"
+#     url: /HTML, CSS, JS/  
+#   - title: "Etc"
+#     url: /Etc/
+#   - title: "Search"
+#     url: /search/
+
+
+
+
+
+#main:
+  #- title: <img src="../images/ImgFile/r.png" width="38" height="38" referrerpolicy="no-referrer" alt="s1">
+    #url: /R/
+  #- #title: <img src="../images/ImgFile/ppppdf.png" width="110" height="110" referrerpolicy="no-referrer" alt="s1">
+    #url: /python/
+  #- title: <img src="../images/ImgFile/mai.png" width="110" height="110" referrerpolicy="no-referrer" alt="s1">
+  #  url: /pp213/
+  # #title: <img src="../images/ImgFile/m2.png" width="110" height="110" referrerpolicy="no-referrer" alt="s1">
+    #url: /MS AI school/
+   #title: "Search"
+   # url: /search/
+
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+

@@ -1,0 +1,161 @@
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+
+// #상단바 만들려면 여기 다시 키면 됨
+
+//    .masthead {
+//     position: relative;
+//     border-bottom: 1px solid $border-color;
+//     border-top: 1px solid $border-color; // 상단 선 추가
+//     border-left: 1px solid $border-color; // 왼쪽 선 추가
+//     border-right: 1px solid $border-color; // 오른쪽 선 추가
+//     -webkit-animation: $intro-transition;
+//     animation: $intro-transition;
+//     -webkit-animation-delay: 0.15s;
+//     animation-delay: 0.15s;
+//     z-index: 20;
+//     background-color: #dedcde; // Mac 터미널 배경색
+//     border-top-left-radius: 17px; // 왼쪽 위 모서리 둥글게
+//     border-top-right-radius: 17px; // 오른쪽 위 모서리 둥글게
+//     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); // 그림자 효과 추가
+//     margin-top: 0.3px; // 상단 간격 추가
+//     margin-left: 0px; // 왼쪽 간격 추가
+//     margin-right: 0px; // 오른쪽 간격 추가
+//     border-right: 0.3px solid #b7bdc8;
+//     border-left: 0.3px solid #b7bdc8;
+//     border-top: 0.3px solid #b7bdc8;
+//     border-bottom: 0.3px solid #838383;
+//     padding-left: 3cm; // 추가
+  
+//     &__inner-wrap {
+//       @include clearfix;
+//       margin-left: auto;
+//       margin-right: auto;
+//       padding: 0.3em; // 패딩 값을 1em에서 0.5em으로 변경하여 두께를 줄임
+//       max-width: 100%;
+//       display: -webkit-box;
+//       display: -ms-flexbox;
+//       display: flex;
+//       -webkit-box-pack: justify;
+//       -ms-flex-pack: justify;
+//       justify-content: space-between;
+//       font-family: $sans-serif-narrow;
+  
+//       @include breakpoint($x-large) {
+//         max-width: $max-width;
+//       }
+  
+//       nav {
+//         z-index: 10;
+//       }
+  
+//       a {
+//         text-decoration: none;
+//       }
+//     }
+//   }
+  
+//   // Mac 터미널 버튼 스타일 추가
+//   .mac-terminal-buttons {
+//     flex-shrink: 0;
+//     display: flex;
+//     margin-right: 1em;
+//     margin-top: 0.35em;
+//     position: absolute; /* 추가 */
+//     left: 15px; /* 추가 */
+    
+//     &__button {
+//       width: 20px;
+//       height: 20px;
+//       border-radius: 50%;
+//       margin-right: 6px;
+//       margin-bottom: 4px;
+//       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); // 그림자 효과 추가
+//       border-style: solid; // 테두리 스타일 설정
+//       border-width: 2px; // 테두리 굵기 설정
+  
+//       &--red {
+//         background-color: #ff5f56;
+//         border-color: #e13c37; // 빨간색 버튼의 테두리 색상
+//       }
+  
+//       &--yellow {
+//         background-color: #ffbc2e;
+//         border-color: #e5a21a; // 노란색 버튼의 테두리 색상
+//       }
+  
+//       &--green {
+//         background-color: #28ca41;
+//         border-color: #09ac26; // 초록색 버튼의 테두리 색상
+//       }
+//     }
+//   }
+  
+  
+//   .site-logo img {
+//     max-height: 2rem;
+//   }
+  
+//   .site-title {
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -ms-flex-item-align: center;
+//     align-self: center;
+//     font-weight: bold;
+//     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); // 텍스트 그림자 효과 추가
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//   }
+  
+//   .site-subtitle {
+//     display: block;
+//     font-size: $type-size-8;
+//   }
+  
+//   .masthead__menu {
+//     float: left;
+//     margin-left: 0;
+//     margin-right: 0;
+//     width: 100%;
+//     clear: both;
+//     display: flex;
+//     justify-content: flex-start;
+  
+//     .site-nav {
+//       margin-left: 0;
+  
+//       @include breakpoint($small) {
+//         float: right;
+//       }
+//     }
+  
+//     ul {
+//       margin: 0;
+//       padding: 0;
+//       clear: both;
+//       list-style-type: none;
+//     }
+//   }
+  
+//   .masthead__menu-item {
+//     display: block;
+//     list-style-type: none;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+
+//     &--lg {
+//       padding-right: 2em;
+//       font-weight: 700;
+//     }
+//   }
+
+
+// @media (min-width: 960px) {
+//   .mac-terminal-buttons {
+//     margin-right: 3cm;
+//   }
+// }
