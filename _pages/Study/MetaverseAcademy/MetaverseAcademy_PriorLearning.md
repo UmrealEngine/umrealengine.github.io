@@ -1,6 +1,6 @@
 ---
 title: 
-permalink: /main/
+permalink: /MetaverseAcademy_PriorLearning/
 layout: single
 author_profile: false
 sidebar_main: false
@@ -80,7 +80,18 @@ sidebar_main: false
             border-left: 1px solid #898585;
             border-top: 1px solid #898585;
             border-right: 1px solid #898585;
+            overflow: hidden; /* 추가: mac-window 내 요소들이 넘치지 않도록 설정 */
         }
+            .mac-window .current-page {
+                font-size: 15px; /* 사이드바 글자 크기와 일치 */
+                color: #5f5f5f; /* 사이드바 글자 색상과 일치 */
+                font-weight: bold; /* 사이드바 글자 두께와 일치 */
+                margin-left: auto; /* 왼쪽의 다른 요소들과의 간격을 유지하고 오른쪽 정렬 */
+                margin-right: 20px; /* 오른쪽 여백 추가 */
+                white-space: nowrap; /* 추가: 텍스트가 한 줄로 유지되도록 설정 */
+                overflow: hidden; /* 추가: 넘치는 텍스트를 숨김 */
+                text-overflow: ellipsis; /* 추가: 넘치는 텍스트가 ...으로 표시되도록 설정 */
+            }
         .sidebar {
             background-color: #282828;
             border-top-right-radius: 0;
@@ -356,20 +367,30 @@ sidebar_main: false
         <div class="circle2" style="background-color: #f5be4f;"></div>
         <div class="circle3" style="background-color: #424242;"></div>
         <input placeholder="Search" class="input" name="text" type="text">
+        <span class="current-page">↳ <img src="../images/ImgFile/mainfolder/blue.png" style="height: 15px; width: auto; margin-top: -4px;" alt=""> Metaverse Academy</span>
     </div>
     <div class="wrapper">
         <div class="sidebar">
             <ul>
                 <li id="folder1">
-                    <a href="" class="image-text-container">
-                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
-                        <span>Project</span>
+                    <a href="" target="_blank" class="image-text-container">
+                        <img src="../images/PageImage/Title/page.png" style="height: 50px; width: auto; margin-top: -4px;" alt="">
+                        <span>[VOD3] C++</span>
+                        <p><i class="far fa-calendar-alt"></i><time> 2024-05-27</time></p>
                     </a>
                 </li>
                 <li id="folder1">
-                    <a href="https://potettang.github.io/MetaverseAcademy/" class="image-text-container">
-                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
-                        <span>Study</span>
+                    <a href="https://docs.google.com/document/d/1v9HwIvvHCx1CD-KtPLqQfDnFNL74pEYuiwkwPn0-rTE/edit?usp=sharing" target="_blank" class="image-text-container">
+                        <img src="../images/PageImage/Title/page.png" style="height: 50px; width: auto; margin-top: -4px;" alt="">
+                        <span>[VOD2] UE 21 ~ 24</span>
+                        <p><i class="far fa-calendar-alt"></i><time> 2024-05-28</time></p>
+                    </a>
+                </li>
+                <li id="folder1">
+                    <a href="https://docs.google.com/document/d/18wTSjVOIZot9TayKKqD-023U8MDwKfeo0U6mF9ifaDI/edit?usp=sharing" target="_blank" class="image-text-container">
+                        <img src="../images/PageImage/Title/page.png" style="height: 50px; width: auto; margin-top: -4px;" alt="">
+                        <span>[VOD1] UE 보충 1 ~ 5</span>
+                        <p><i class="far fa-calendar-alt"></i><time> 2024-05-26</time></p>
                     </a>
                 </li>
             </ul>
@@ -434,9 +455,6 @@ sidebar_main: false
         });
     </script>
 </body>
-
-<!-- <img src="../images/ImgFile/mainfolder/mainimage.gif" width="100%" height="1000" referrerpolicy="no-referrer" alt="s1" style="border-radius:20px;">
-<br/> -->
 
 
 <ul class="example-2">

@@ -1,11 +1,10 @@
 ---
 title: 
-permalink: /main/
+permalink: /MetaverseAcademy/
 layout: single
 author_profile: false
 sidebar_main: false
 ---
-
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +18,7 @@ sidebar_main: false
             margin: 0;
             padding: 0;
         }
-        .circle1 {
+        .circle1, .circle2, .circle3 {
             width: 21px;
             height: 21px;
             border-radius: 100%;
@@ -30,23 +29,9 @@ sidebar_main: false
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.15), 0 0 10px #ec695e;
             transition: box-shadow 0.3s ease;
         }
-        .circle2 {
-            width: 21px;
-            height: 21px;
-            border-radius: 100%;
-            margin-right: 9px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.15);
-        }
         .circle2:hover {
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.15), 0 0 10px #f5be4f;
             transition: box-shadow 0.3s ease;
-        }
-        .circle3 {
-            width: 21px;
-            height: 21px;
-            border-radius: 100%;
-            margin-right: 9px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.15);
         }
         .circle3:hover {
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.15), 0 0 10px #61c455;
@@ -73,26 +58,31 @@ sidebar_main: false
             position: absolute;
             top: 0;
             width: 100%;
-            box-shadow: none;
             box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.18), 0 -2px 4px rgba(0, 0, 0, 0.15);
             border-top-left-radius: 18px;
             border-top-right-radius: 18px;
-            border-left: 1px solid #898585;
-            border-top: 1px solid #898585;
-            border-right: 1px solid #898585;
+            border: 1px solid #898585;
+            overflow: hidden;
+        }
+        .mac-window .current-page {
+            font-size: 15px;
+            color: #5f5f5f;
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .sidebar {
             background-color: #282828;
             border-top-right-radius: 0;
             border-bottom-left-radius: 18px;
             border-bottom-right-radius: 18px;
-            border-right: none;
             margin-top: -43px;
-            border: 0px solid #57606a;
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.18), 0 8px 10px rgba(0, 0, 0, 0.15);
             height: 600px;
             overflow-y: auto;
-            box-sizing: border-box;
             border-left: 1px solid #565756;
             border-bottom: 1px solid #565756;
             width: 100%;
@@ -119,27 +109,10 @@ sidebar_main: false
             font-size: 20px;
             font-weight: bold;
             flex: 0 0 calc(25% - 10px);
-            box-sizing: border-box;
             margin-bottom: 40px;
         }
-        .sidebar li::after {
-            content: ""; /* 변경된 부분: 줄 제거 */
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;    
-            background-color: transparent; /* 변경된 부분: 줄 제거 */
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.3s;
-        }
         .sidebar li:hover {
-            color: #42e5e1; /* 변경된 부분: 텍스트 색상 변경 */
-        }
-        .sidebar li.active::after,
-        .sidebar li:hover::after {
-            transform: scaleX(1);
+            color: #42e5e1;
         }
         .image-text-container {
             display: flex;
@@ -164,188 +137,86 @@ sidebar_main: false
         .sidebar li a:hover {
             color: inherit;
         }
-        /* tool tip_start*/
-        ul {
-        list-style: none;
+        .example-2, .example-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .example-2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .icon-content {
+            margin: 0 10px;
+            position: relative;
         }
-        .example-2 .icon-content {
-        margin: 0 10px;
-        position: relative;
+        .icon-content .tooltip {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 5px;
+            opacity: 0;
+            visibility: hidden;
+            font-size: 14px;
+            transition: all 0.3s ease;
         }
-        .example-2 .icon-content .tooltip {
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        padding: 6px 10px;
-        border-radius: 5px;
-        opacity: 0;
-        visibility: hidden;
-        font-size: 14px;
-        transition: all 0.3s ease;
+        .icon-content:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+            top: -50px;
         }
-        .example-2 .icon-content:hover .tooltip {
-        opacity: 1;
-        visibility: visible;
-        top: -50px;
+        .icon-content a {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: #4d4d4d;
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
         }
-        .example-2 .icon-content a {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        color: #4d4d4d;
-        background-color: #fff;
-        transition: all 0.3s ease-in-out;
+        .icon-content a:hover {
+            box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+            color: white;
         }
-        .example-2 .icon-content a:hover {
-        box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+        .icon-content a svg {
+            position: relative;
+            z-index: 1;
+            width: 30px;
+            height: 30px;
         }
-        .example-2 .icon-content a svg {
-        position: relative;
-        z-index: 1;
-        width: 30px;
-        height: 30px;
+        .icon-content a .filled {
+            position: absolute;
+            top: auto;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #000;
+            transition: all 0.3s ease-in-out;
         }
-        .example-2 .icon-content a:hover {
-        color: white;
+        .icon-content a:hover .filled {
+            height: 100%;
         }
-        .example-2 .icon-content a .filled {
-        position: absolute;
-        top: auto;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background-color: #000;
-        transition: all 0.3s ease-in-out;
+        .icon-content a[data-social="linkedin"] .filled, .icon-content a[data-social="linkedin"] ~ .tooltip {
+            background-color: #0274b3;
         }
-        .example-2 .icon-content a:hover .filled {
-        height: 100%;
+        .icon-content a[data-social="github"] .filled, .icon-content a[data-social="github"] ~ .tooltip {
+            background-color: #24262a;
         }
-        .example-2 .icon-content a[data-social="linkedin"] .filled,
-        .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
-        background-color: #0274b3;
+        .icon-content a[data-social="instagram"] .filled, .icon-content a[data-social="instagram"] ~ .tooltip {
+            background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
         }
-        .example-2 .icon-content a[data-social="github"] .filled,
-        .example-2 .icon-content a[data-social="github"] ~ .tooltip {
-        background-color: #24262a;
+        .icon-content a[data-social="youtube"] .filled, .icon-content a[data-social="youtube"] ~ .tooltip {
+            background-color: #ff0000;
         }
-        .example-2 .icon-content a[data-social="instagram"] .filled,
-        .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-        background: linear-gradient(
-            45deg,
-            #405de6,
-            #5b51db,
-            #b33ab4,
-            #c135b4,
-            #e1306c,
-            #fd1f1f
-        );
+        .icon-content a[data-social="discord"] .filled, .icon-content a[data-social="discord"] ~ .tooltip {
+            background-color: #7289da;
         }
-        .example-2 .icon-content a[data-social="youtube"] .filled,
-        .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-        background-color: #ff0000;
-        }
-        /* tool tip_end*/
-        .example-3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-        .example-3 .icon-content {
-        margin: 0 10px;
-        position: relative;
-        }
-        .example-3 .icon-content .tooltip {
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        padding: 6px 10px;
-        border-radius: 5px;
-        opacity: 0;
-        visibility: hidden;
-        font-size: 14px;
-        transition: all 0.3s ease;
-        }
-        .example-3 .icon-content:hover .tooltip {
-        opacity: 1;
-        visibility: visible;
-        top: -50px;
-        }
-        .example-3 .icon-content a {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        color: #4d4d4d;
-        background-color: #fff;
-        transition: all 0.3s ease-in-out;
-        }
-        .example-3 .icon-content a:hover {
-        box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-        }
-        .example-3 .icon-content a svg {
-        position: relative;
-        z-index: 1;
-        width: 30px;
-        height: 30px;
-        }
-        .example-3 .icon-content a:hover {
-        color: white;
-        }
-        .example-3 .icon-content a .filled {
-        position: absolute;
-        top: auto;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background-color: #000;
-        transition: all 0.3s ease-in-out;
-        }
-        .example-3 .icon-content a:hover .filled {
-        height: 100%;
-        }
-        .example-3 .icon-content a[data-social="discord"] .filled,
-        .example-3 .icon-content a[data-social="discord"] ~ .tooltip {
-        background-color: #7289da;
-        }
-        .example-3 .icon-content a[data-social="steam"] .filled,
-        .example-3 .icon-content a[data-social="steam"] ~ .tooltip {
-        background-color: #171d25;
-        }
-        .example-3 .icon-content a[data-social="instagram"] .filled,
-        .example-3 .icon-content a[data-social="instagram"] ~ .tooltip {
-        background: linear-gradient(
-            45deg,
-            #405de6,
-            #5b51db,
-            #b33ab4,
-            #c135b4,
-            #e1306c,
-            #fd1f1f
-        );
-        }
-        .example-3 .icon-content a[data-social="youtube"] .filled,
-        .example-3 .icon-content a[data-social="youtube"] ~ .tooltip {
-        background-color: #ff0000;
+        .icon-content a[data-social="steam"] .filled, .icon-content a[data-social="steam"] ~ .tooltip {
+            background-color: #171d25;
         }
     </style>
 </head>
@@ -356,87 +227,79 @@ sidebar_main: false
         <div class="circle2" style="background-color: #f5be4f;"></div>
         <div class="circle3" style="background-color: #424242;"></div>
         <input placeholder="Search" class="input" name="text" type="text">
+        <span class="current-page">↳ <img src="../images/ImgFile/mainfolder/blue.png" style="height: 15px; width: auto; margin-top: -4px;" alt=""> Metaverse Academy</span>
     </div>
     <div class="wrapper">
         <div class="sidebar">
             <ul>
                 <li id="folder1">
                     <a href="" class="image-text-container">
-                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
-                        <span>Project</span>
+                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-bottom: 10px;" alt="">
+                        Metaverse Academy
                     </a>
                 </li>
-                <li id="folder1">
-                    <a href="https://potettang.github.io/MetaverseAcademy/" class="image-text-container">
-                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
-                        <span>Study</span>
+                <li id="folder2">
+                    <a href="" class="image-text-container">
+                        <img src="../images/ImgFile/mainfolder/yellow.png" style="height: 37px; width: auto; margin-bottom: 10px;" alt="">
+                        Champions of Change
+                    </a>
+                </li>
+                <li id="folder3">
+                    <a href="" class="image-text-container">
+                        <img src="../images/ImgFile/mainfolder/green.png" style="height: 37px; width: auto; margin-bottom: 10px;" alt="">
+                        Exploring Frontiers
+                    </a>
+                </li>
+                <li id="folder4">
+                    <a href="" class="image-text-container">
+                        <img src="../images/ImgFile/mainfolder/orange.png" style="height: 37px; width: auto; margin-bottom: 10px;" alt="">
+                        Play & Learn
+                    </a>
+                </li>
+                <li id="folder5">
+                    <a href="" class="image-text-container">
+                        <img src="../images/ImgFile/mainfolder/purple.png" style="height: 37px; width: auto; margin-bottom: 10px;" alt="">
+                        Learning Marketplace
+                    </a>
+                </li>
+                <li id="folder6">
+                    <a href="" class="image-text-container">
+                        <img src="../images/ImgFile/mainfolder/pink.png" style="height: 37px; width: auto; margin-bottom: 10px;" alt="">
+                        Learning Pathways
+                    </a>
+                </li>
+                <li id="folder7">
+                    <a href="" class="image-text-container">
+                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-bottom: 10px;" alt="">
+                        Game Creators Academy
+                    </a>
+                </li>
+                <li id="folder8">
+                    <a href="" class="image-text-container">
+                        <img src="../images/ImgFile/mainfolder/yellow.png" style="height: 37px; width: auto; margin-bottom: 10px;" alt="">
+                        About Us
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="content" id="content"></div>
+        <div class="example-2">
+            <div class="icon-content">
+                <a href="#" class="icon" data-social="linkedin">
+                    <span class="filled"></span>
+                    <svg>...</svg>
+                </a>
+                <span class="tooltip">LinkedIn</span>
+            </div>
+            <div class="icon-content">
+                <a href="#" class="icon" data-social="github">
+                    <span class="filled"></span>
+                    <svg>...</svg>
+                </a>
+                <span class="tooltip">GitHub</span>
+            </div>
+        </div>
     </div>
-    <script>
-        const folders = document.querySelectorAll('.sidebar li');
-        const content = document.getElementById('content');
-        const input = document.querySelector('.input');
-        const sidebarUl = document.querySelector('.sidebar ul');
-        // Add the "active" class to the first folder
-        folders[0].classList.add('active');
-        function loadFolderContent(folder) {
-            content.innerHTML = '';
-        }
-        folders.forEach(folder => {
-            // 이벤트 리스너를 추가합니다.
-            folder.addEventListener('click', () => {
-                // Remove the "active" class from all the folders
-                folders.forEach(f => f.classList.remove('active'));
-                const folderId = folder.getAttribute('id');
-                // Add the "active" class to the clicked folder
-                folder.classList.add('active');
-                loadFolderContent(folderId);
-            });
-            // 이벤트 리스너를 추가하여 마우스가 요소 위에 있을 때 "active" 클래스를 추가합니다.
-            folder.addEventListener('mouseover', () => {
-                folder.classList.add('active');
-            });
-            // 마우스가 요소 위에서 벗어날 때 "active" 클래스를 제거합니다.
-            folder.addEventListener('mouseout', () => {
-                folder.classList.remove('active');
-            });
-        });
-        // Load the first folder by default
-        loadFolderContent('folder1');
-        input.addEventListener('input', function () {
-            const searchText = input.value.toLowerCase();
-            folders.forEach(folder => {
-                const spanText = folder.querySelector('span').textContent.toLowerCase();
-                if (spanText.includes(searchText)) {
-                    folder.style.display = 'block';
-                } else {
-                    folder.style.display = 'none';
-                }
-            });
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            var circle = document.querySelector('.circle1');
-            circle.addEventListener('click', function () {
-                window.location.href = 'https://potettang.github.io/main/';
-            });
-        });
-        var circle2 = document.querySelector('.circle2');
-        circle2.addEventListener('click', function () {
-            history.back();
-        });
-        var circle3 = document.querySelector('.circle3');
-        circle3.addEventListener('click', function () {
-            history.forward();
-        });
-    </script>
 </body>
-
-<!-- <img src="../images/ImgFile/mainfolder/mainimage.gif" width="100%" height="1000" referrerpolicy="no-referrer" alt="s1" style="border-radius:20px;">
-<br/> -->
 
 
 <ul class="example-2">
