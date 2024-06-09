@@ -367,7 +367,7 @@ sidebar_main: false
         <div class="circle2" style="background-color: #f5be4f;"></div>
         <div class="circle3" style="background-color: #424242;"></div>
         <input placeholder="Search" class="input" name="text" type="text">
-        <span class="current-page">↳ <img src="../images/ImgFile/mainfolder/blue.png" style="height: 15px; width: auto; margin-top: -4px;" alt=""> Metaverse Academy</span>
+        <span class="current-page">↳ <img src="../images/mainfolder/blue.png" style="height: 15px; width: auto; margin-top: -4px;" alt=""> Metaverse Academy</span>
     </div>
     <div class="wrapper">
         <div class="sidebar">

@@ -362,13 +362,13 @@ sidebar_main: false
             <ul>
                 <li id="folder1">
                     <a href="" class="image-text-container">
-                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
+                        <img src="../images/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
                         <span>Project</span>
                     </a>
                 </li>
                 <li id="folder1">
                     <a href="https://potettang.github.io/MetaverseAcademy/" class="image-text-container">
-                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
+                        <img src="../images/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
                         <span>Study</span>
                     </a>
                 </li>
@@ -435,7 +435,7 @@ sidebar_main: false
     </script>
 </body>
 
-<!-- <img src="../images/ImgFile/mainfolder/mainimage.gif" width="100%" height="1000" referrerpolicy="no-referrer" alt="s1" style="border-radius:20px;">
+<!-- <img src="../images/mainfolder/mainimage.gif" width="100%" height="1000" referrerpolicy="no-referrer" alt="s1" style="border-radius:20px;">
 <br/> -->
 
 

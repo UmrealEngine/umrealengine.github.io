@@ -367,14 +367,14 @@ sidebar_main: false
         <div class="circle2" style="background-color: #f5be4f;"></div>
         <div class="circle3" style="background-color: #424242;"></div>
         <input placeholder="Search" class="input" name="text" type="text">
-        <span class="current-page">↳ <img src="../images/ImgFile/mainfolder/blue.png" style="height: 15px; width: auto; margin-top: -4px;" alt=""> C++</span>
+        <span class="current-page">↳ <img src="../images/mainfolder/blue.png" style="height: 15px; width: auto; margin-top: -4px;" alt=""> C++</span>
     </div>
     <div class="wrapper">
         <div class="sidebar">
             <ul>
                 <li id="folder1">
                     <a href="https://potettang.github.io/MetaverseAcademy_PriorLearning/" class="image-text-container">
-                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
+                        <img src="../images/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
                         <span>Metaverse Academy_C++</span>
                     </a>
                 </li>
@@ -395,7 +395,7 @@ sidebar_main: false
                 </li>
                 <li id="folder1">
                     <a href="https://potettang.github.io/MetaverseAcademy_PriorLearning/" class="image-text-container">
-                        <img src="../images/ImgFile/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
+                        <img src="../images/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
                         <span>Metaverse Academy_C++</span>
                     </a>
                 </li>
