@@ -367,7 +367,7 @@ sidebar_main: false
                     </a>
                 </li>
                 <li id="folder1">
-                    <a href="https://potettang.github.io/MetaverseAcademy/" class="image-text-container">
+                    <a href="https://potettang.github.io/Study/" class="image-text-container">
                         <img src="../images/mainfolder/blue.png" style="height: 37px; width: auto; margin-top: -4px;" alt="">
                         <span>Study</span>
                     </a>
