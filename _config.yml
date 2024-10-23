@@ -21,7 +21,7 @@ title_separator          : "|"
 subtitle                 : ""
 name                     : "SUHYEOK JANG"
 description              : "hii"
-url                      : "https://potettang.github.io/"
+url                      : "https://umrealengine.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -107,7 +107,7 @@ analytics:
 author:
   name             : "Suhyeok Jang"
   avatar           : "/images/ImgFile/3d.png" #"/images/ImgFile/dang.png" #Author profile and links
-  bio: "<br><a href='https://mail.google.com/mail'><img src='/images/ImgFile/HomeSidebar/hmail.png' style='width: 33px; height: 30px;'/> kr.suhyeok@gmail.com</a>       <br><br>     <a href='https://github.com/potettang'><img src='/images/ImgFile/HomeSidebar/hgit2.png' style='width: 33px; height: 33px;'/> GitHub</a>         <br><br>     <a href='https://potettang.github.io/'><img src='/images/ImgFile/HomeSidebar/hlink.png' style='width: 33px; height: 33px;'/> Linked in</a>   <br><br>  <a href='https://potettang.github.io/'><img src='/images/ImgFile/HomeSidebar/hinsta.png' style='width: 33px; height: 33px;'/> Instagram</a>"
+  bio: "<br><a href='https://mail.google.com/mail'><img src='/images/ImgFile/HomeSidebar/hmail.png' style='width: 33px; height: 30px;'/> kr.suhyeok@gmail.com</a>       <br><br>     <a href='https://github.com/umrealengine'><img src='/images/ImgFile/HomeSidebar/hgit2.png' style='width: 33px; height: 33px;'/> GitHub</a>         <br><br>     <a href='https://umrealengine.github.io/'><img src='/images/ImgFile/HomeSidebar/hlink.png' style='width: 33px; height: 33px;'/> Linked in</a>   <br><br>  <a href='https://umrealengine.github.io/'><img src='/images/ImgFile/HomeSidebar/hinsta.png' style='width: 33px; height: 33px;'/> Instagram</a>"
   # location         : "South korea"
   email            : 
   links:
@@ -116,7 +116,7 @@ author:
       #url: "https://mail.google.com/"
     - #label: "Github"
       #icon: "<img src='/images/ImgFile/hgcon.ico' width='16' height='16'/>"
-      #url: "https://github.com/potettang"
+      #url: "https://github.com/umrealengine"
     - #label: "Website"
       #icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -125,7 +125,7 @@ author:
       # url: "https://twitter.com/"
     - #label: "Linked in"
       #icon: "fab fa-fw fa-linkedin"
-      #url: "https://potettang.github.io/"
+      #url: "https://umrealengine.github.io/"
     - #label: "Instagram"
       #icon: "fab fa-fw fa-instagram"  #"fab fa-instagram"
       #url: ""
@@ -139,10 +139,10 @@ author:
 #       # url:
 #     - label: "GitHub"
 #       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/potettang"
+#       url: "https://github.com/umrealengine"
 #     - label: "Linked in"
 #       icon: "fab fa-fw fa-linkedin"
-#       url: "https://potettang.github.io/"
+#       url: "https://umrealengine.github.io/"
 #     - label: "GitLab"
 #       icon: "fab fa-fw fa-gitlab"
 #       # url:

@@ -442,7 +442,7 @@ sidebar_main: false
         document.addEventListener('DOMContentLoaded', function () {
             var circle = document.querySelector('.circle1');
             circle.addEventListener('click', function () {
-                window.location.href = 'https://potettang.github.io/main/';
+                window.location.href = 'https://umrealengine.github.io/main/';
             });
         });
         var circle2 = document.querySelector('.circle2');
@@ -478,7 +478,7 @@ sidebar_main: false
   </li>
   <li class="icon-content">
     <a
-      href="https://github.com/potettang"
+      href="https://github.com/umrealengine"
       aria-label="LinkedIn"
       data-social="linkedin"
     >
@@ -500,7 +500,7 @@ sidebar_main: false
     </a>
   </li>
   <li class="icon-content">
-    <a href="https://github.com/potettang" aria-label="GitHub" data-social="github">
+    <a href="https://github.com/umrealengine" aria-label="GitHub" data-social="github">
       <div class="filled"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -520,7 +520,7 @@ sidebar_main: false
   </li>
   <li class="icon-content">
     <a
-      href="https://github.com/potettang"
+      href="https://github.com/umrealengine"
       aria-label="Instagram"
       data-social="instagram"
     >
@@ -542,7 +542,7 @@ sidebar_main: false
     </a>
   </li>
   <li class="icon-content">
-    <a href="https://youtube.com/@potettang?si=wYfVSBnx9RfnGoCo" aria-label="Youtube" data-social="youtube">
+    <a href="https://youtube.com/@umrealengine?si=wYfVSBnx9RfnGoCo" aria-label="Youtube" data-social="youtube">
       <div class="filled"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -163,7 +163,7 @@ sidebar_main: True
                 <div class="archive__item-wrapper">
                 <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork" data-category="subcategory1">
                     <h3 class="archive__item-title no_toc" itemprop="headline">
-                        <a href="https://github.com/potettang/StudyArchive/blob/main/Python/Python%20Syntax.md">총정리</a>
+                        <a href="https://github.com/umrealengine/StudyArchive/blob/main/Python/Python%20Syntax.md">총정리</a>
                     </h3>
                 </article>
             </div>

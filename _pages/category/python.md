@@ -171,7 +171,7 @@ sidebar_main: true
                 <div class="archive__item-wrapper">
                 <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork" data-category="subcategory1">
                     <h3 class="archive__item-title no_toc" itemprop="headline">
-                        <a href="https://github.com/potettang/StudyArchive/blob/main/Python/Python%20Syntax.md"><i class="fab fa-github"></i> Python syntax complete summary</a>
+                        <a href="https://github.com/umrealengine/StudyArchive/blob/main/Python/Python%20Syntax.md"><i class="fab fa-github"></i> Python syntax complete summary</a>
                     </h3>
                 </article>
             </div>
@@ -355,7 +355,7 @@ sidebar_main: true
                 <div class="archive__item-wrapper">
                 <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork" data-category="subcategory1">
                     <h3 class="archive__item-title no_toc" itemprop="headline">
-                        <a href="https://github.com/potettang/Algorithm"><i class="fab fa-github"></i> Algorithm Github Link</a>
+                        <a href="https://github.com/umrealengine/Algorithm"><i class="fab fa-github"></i> Algorithm Github Link</a>
                     </h3>
                 </article>
             </div>
